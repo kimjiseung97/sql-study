@@ -67,6 +67,7 @@ WHERE sn = '101'
     AND char_4 = varchar_6
 ;
 
+-- 가변길이와 고정길이를 비교할경우 글자수가 다르면 그냥 다르다고 판단한다
 SELECT 
     REPLACE(char_4, ' ', '+') AS char_4,
     REPLACE(varchar_6, ' ', '+') AS varchar_6
@@ -88,7 +89,7 @@ SELECT
     REPLACE(varchar_6, ' ', '+') AS varchar_6
 FROM varchar_compare
 WHERE sn = '101'
-    AND char_4 = 'SQLD         '
+    AND char_4 = 'SQLD       '
 ;
 
 SELECT 
@@ -114,7 +115,7 @@ SELECT
 FROM dual;
 
 SELECT
-    ASCII('A'), -- 문자를 아스키코드로
+    ASCII('A'),  -- 문자를 아스키코드로
     CHR(97)     -- 아스키코드를 문자로
 FROM dual;
 

@@ -40,7 +40,6 @@ SELECT * FROM tb_emp;
 -- drop table 
 -- 복구절대안됌 로그남지않음 매우 주의
 DROP TABLE	TB_EMP_COPY;
-
 --truncate table
 -- 테이블 구조는 유지 내부 데이터 전체삭제 (매우주의)
 TRUNCATE TABLE TB_EMP_COPY;
